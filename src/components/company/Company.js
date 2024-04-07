@@ -37,18 +37,59 @@ export default function Company() {
     const [evolutionEnterpriseValue, setEvolutionEnterpriseValue] = useState(0);
     const [evolutionCollaboratorsValue, setEvolutionCollaboratorsValue] = useState(0);
     const [evolutionPresenceValue, setEvolutionPresenceValue] = useState(0);
+    const [remainingMinutes, setRemainingMinutes] = useState(0);
+    const [remainingSeconds, setRemainingSeconds] = useState(0);
     const evolutionSectionRef = useRef(null);
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+    function calculateTimeFromDate(startDate) {
+        // Create a new Date object for the current date and time
+        const currentDate = new Date();
+        
+        // Parse the startDate string into a Date object
+        const startDateObj = new Date(startDate);
+        
+        // Calculate the difference in milliseconds between the two dates
+        const timeDifference = currentDate - startDateObj;
+        
+        // Convert milliseconds to seconds, minutes, hours, days, and months
+        const seconds = Math.floor(timeDifference / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+        const months = Math.floor(days / 30);
+        
+        // Calculate remaining days, hours, minutes, and seconds
+        const remainingDays = days % 30;
+        const remainingHours = hours % 24;
+        const remainingMinutes = minutes % 60;
+        const remainingSeconds = seconds % 60;
+        
+        // Return an object with the calculated values
+        return {
+          months,
+          days: remainingDays,
+          hours: remainingHours,
+          minutes: remainingMinutes,
+          seconds: remainingSeconds,
+        };
+      }
+      
+    //   useEffect()
+      
     window.onscroll = () => {
         const evolutionSectionOffset = evolutionSectionRef.current.offsetTop;
         const userOffset = window.scrollY;
 
         if (userOffset >= evolutionSectionOffset - 400) {
-            setEvolutionEnterpriseValue(20);
-            setEvolutionCollaboratorsValue(4);
-            setEvolutionPresenceValue(99);
+            const startDate = '2023-11-10T23:00:00'; // Example start date
+            const { months, days, hours, minutes, seconds } = calculateTimeFromDate(startDate);
+
+            setEvolutionEnterpriseValue(months);
+            setEvolutionCollaboratorsValue(days);
+            setEvolutionPresenceValue(hours);
+            setRemainingMinutes(minutes);
+            setRemainingSeconds(seconds);
         }
     };
 
@@ -152,7 +193,7 @@ export default function Company() {
                     </div>
                 </ScrollAnimation>
             </article>
-            <article className={styles.gettingBetter} id="gettingBetter">
+            {/* <article className={styles.gettingBetter} id="gettingBetter">
                 <h3>Crescendo cada vez mais</h3>
                 <p>Quem é da iManager pode contar com soluções completas para todos os momentos.</p>
                 <ul>
@@ -175,7 +216,7 @@ export default function Company() {
                         <span>iManager</span> Shop
                     </li>
                 </ul>
-            </article>
+            </article> */}
             <article className={styles.evolution} ref={evolutionSectionRef} id="evolution">
                 <h3>Números da nossa evolução</h3>
                 <div className={styles.evolutionCardsList}>
@@ -221,6 +262,30 @@ export default function Company() {
                         <h4>
                             <AnimatedNumber
                                 value={evolutionPresenceValue}
+                                style={{
+                                    transitionProperty: 'all',
+                                    transition: '1s ease-out',
+                                    fontSize: 60,
+                                    borderBottom: '2px solid #b3679b',
+                                    color: '#b3679b'
+                                }}
+                                duration={1800}
+                                formatValue={v => v.toFixed(0)}
+                            />:
+                            <AnimatedNumber
+                                value={remainingMinutes}
+                                style={{
+                                    transitionProperty: 'all',
+                                    transition: '1s ease-out',
+                                    fontSize: 60,
+                                    borderBottom: '2px solid #b3679b',
+                                    color: '#b3679b'
+                                }}
+                                duration={1800}
+                                formatValue={v => v.toFixed(0)}
+                            />:
+                            <AnimatedNumber
+                                value={remainingSeconds}
                                 style={{
                                     transitionProperty: 'all',
                                     transition: '1s ease-out',
@@ -400,7 +465,7 @@ export default function Company() {
                     <p>Somos reconhecidos e premiados em diversas áreas, por nossas ações inovadoras e focadas em impactar positivamente a vida das pessoas, a gestão das empresas, e o mundo.</p>
                 </ScrollAnimation>
             </article>
-            <article className={styles.partnership} id="partnership">
+            {/* <article className={styles.partnership} id="partnership">
                 <h3>Imprensa e Parcerias</h3>
                 <p>Pedidos de imprensa, parcerias e mais informações? Fale com a gente.</p>
                 <div className={styles.partnershipInfo}>
@@ -436,7 +501,7 @@ export default function Company() {
                         </a>
                     </ScrollAnimation>
                 </div>
-            </article>
+            </article> */}
             <article className={styles.news} id="news">
                 <h3>Fique por dentro das nossas novidades</h3>
                 <p>
