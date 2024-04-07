@@ -10,6 +10,9 @@ import iBestImage from '../../assets/iBestImage.png';
 import reclameAquiImage from '../../assets/reclameAquiImage.png';
 import joaoVitorMeninImage from '../../assets/joaoVitorMeninImage.png';
 import humanizadasImage from '../../assets/humanizadasImage.png';
+import Muskan from '../../assets/muskan.jpg';
+import Muskan2 from '../../assets/muskan2.jpg';
+import Muskan3 from '../../assets/muskan3.jpg';
 import seloOuroGHGImage from '../../assets/seloOuroGHGImage.png';
 
 import { BiDownArrow } from 'react-icons/bi';
@@ -57,11 +60,6 @@ export default function Company() {
         <section className={styles.section}>
             <article className={styles.headerImage} id="companyHeader">
                 <h2>Happy birthday</h2>
-                <a href="#colorHighlight">
-                    <SubmitButton>
-                        <BiDownArrow />
-                    </SubmitButton>
-                </a>
             </article>
             <article id="colorHighlight" className={styles.colorHighlight}>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.6} delay={100} animatePreScroll={false}>
@@ -139,17 +137,17 @@ export default function Company() {
                 </h3>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <div className={styles.cardList}>
-                        <div>
-                            <MdOutlineSecurity />
-                            <p>Segurança</p>
+                        <div className={styles.card}>
+                        <img src={Muskan} alt="Segurança" />
+                            <p className='text-white fs-2' >Segurança</p>
                         </div>
-                        <div>
-                            <SiFastapi />
-                            <p>Agilidade</p>
+                        <div className={styles.card}>
+                        <img src={Muskan2} alt="Segurança" />
+                            <p className='text-white fs-2' >Segurança</p>
                         </div>
-                        <div>
-                            <SiPowerbi />
-                            <p>Eficiência</p>
+                        <div className={styles.card}>
+                        <img src={Muskan3} alt="Segurança" />
+                            <p className='text-white fs-2' >Segurança</p>
                         </div>
                     </div>
                 </ScrollAnimation>
