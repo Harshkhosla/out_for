@@ -6,14 +6,14 @@ import IManagerFooter from '../layout/IManagerFooter';
 import CompanyImage2 from '../../assets/companyImage2.jpg';
 import CompanyImage4 from '../../assets/companyImage4.jpg';
 import CompanyImage6 from '../../assets/companyImage6.jpg';
-import iBestImage from '../../assets/iBestImage.png';
-import reclameAquiImage from '../../assets/reclameAquiImage.png';
-import joaoVitorMeninImage from '../../assets/joaoVitorMeninImage.png';
-import humanizadasImage from '../../assets/humanizadasImage.png';
+import iBestImage from '../../assets/iBestImage.jpg';
+import reclameAquiImage from '../../assets/reclameAquiImage.jpg';
+import joaoVitorMeninImage from '../../assets/joaoVitorMeninImage.jpg';
+import humanizadasImage from '../../assets/humanizadasImage.jpg';
 import Muskan from '../../assets/muskan.jpg';
 import Muskan2 from '../../assets/muskan2.jpg';
 import Muskan3 from '../../assets/muskan3.jpg';
-import seloOuroGHGImage from '../../assets/seloOuroGHGImage.png';
+import seloOuroGHGImage from '../../assets/seloOuroGHGImage.jpg';
 
 import { BiDownArrow } from 'react-icons/bi';
 import { MdMonitor, MdAccountCircle, MdLock, MdAirplaneTicket, MdNetworkCell, MdOutlineSecurity } from 'react-icons/md';
@@ -100,73 +100,77 @@ export default function Company() {
     return (
         <section className={styles.section}>
             <article className={styles.headerImage} id="companyHeader">
-                <h2>Happy birthday</h2>
+                <h2>Happy birthday ♥ ♥ ♥</h2>
             </article>
             <article id="colorHighlight" className={styles.colorHighlight}>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.6} delay={100} animatePreScroll={false}>
                     <h3>
-                        Nascemos para fazer
+                        Mera Motta bachha
                         <br />
-                        diferente
+                        pyara bachha
                     </h3>
                     <p>
-                        A iManager está aqui para fazer aquilo que ninguém conseguiu...
+                    I love you soo sooo much aur phelei bat mai khai ni jya raha there sath he chipka 
+                    hua hu till infinity ♾  aur Haan muje pata hai tu care karti Hai bhot mere Lia aur 
+                    mai bhi karta hu there lie bhot sari Mc muje bhi dar lagata hai jab tu gussa hoti hai ki tu khai chali na jye 
+                    ..wese God have blessed me with my wishes I have you my angle ❤
                         <br />
-                        Para reunir em um Web App tudo que faz diferença na gestão da sua empresa.
+                        I will serve no matter how I will work hard for you to be with
+                      you forever ✨✨and ever..
                     </p>
                 </ScrollAnimation>
             </article>
             <article className={styles.simplicity} id="simplicity">
                 <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
-                    <h3>Criamos o que simplifica a gestão das empresas</h3>
-                    <p>Simplificar é tirar as burocracias da frente e conectar as soluções que a sua empresa precisa em um só lugar.</p>
+                    <h3>Remember our trip ?</h3>
+                    <p>Yad hai trip se akk din phele apan kese ladh rahye the ki muje nahi jana sab ajeeb sa lag raha tha </p>
                     <br />
-                    <p>Nós da iManager percebemos uma dificuldade das empresas e viemos trazer a solução que ninguém trouxe: Reunimos em um Web App tudo o que a sua empresa precisa para ter uma gestão simples, segura e eficiente.</p>
+                    <p>Par moti dhek le fir thuje mai kese trip pe le gaya tha itne acting kar ke fir waha par kitna compensation bhi lia tha moti apani pheli trip sath mai moti dhek le trip pe tho thuje yhe wali bhi nahi jhana hota (acting) jho itni karti hai par moti ka man pura hota hai Kitna Kush mai mera bachha is mai dhek  </p>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <img src={CompanyImage2} alt="woman programmer working" />
                 </ScrollAnimation>
             </article>
             <div className={styles.simplicityImageDown} id="simplicityImageDown">
-                <MdMonitor />
-                <p>Mais que um gerenciador, um Web App que simplifica a sua empresa.</p>
+                {/* <MdMonitor /> */}
+                {/* <p>Mais que um gerenciador, um Web App que simplifica a sua empresa.</p> */}
             </div>
             <article className={styles.services} id="services">
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
-                    <img src={CompanyImage4} alt="woman accountant working" />
+                    <img src={CompanyImage4} alt="woman accountant working" style={{ width: '100%', maxWidth: '400px', height: 'auto' }}/>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInDown" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <div>
                         <h3>
-                            Isso é <span>iManager</span>
+                            Pros   &<span>Cons</span> 
                         </h3>
                         <p>
-                            Descomplicamos o funcionamento da sua empresa <BsCheckLg />
+                            Of My Mota Bachha <BsCheckLg />
                         </p>
                         <ul>
                             <li>
-                                <MdAccountCircle /> Conta digital gratuita
+                                <MdAccountCircle /> Eats everything possible
                             </li>
                             <li>
-                                <SiPlatzi /> Plataforma de gestão de projetos
+                                <SiPlatzi /> Sleep everytime possible 
                             </li>
                             <li>
-                                <MdLock /> Seguros para sua empresa
+                                <MdLock /> Use only 10 % of her brain rest is never used 
                             </li>
                             <li>
-                                <RiShoppingBagFill /> Shopping com os melhores lojistas do Brasil
+                                <RiShoppingBagFill /> Big nose (CUTE SI)
                             </li>
                             <li>
-                                <BsCreditCard2FrontFill /> Crédito pra você realizar seus projetos
+                                <BsCreditCard2FrontFill /> Very less strength 
                             </li>
                             <li>
-                                <MdAirplaneTicket /> Passagens aéreas para seus clientes
+                                <MdAirplaneTicket /> Mujhe bhot sara khama khilati hai moti 
                             </li>
                             <li>
-                                <MdNetworkCell /> Operadora móvel virtual própria
+                                <MdNetworkCell /> The poti ability to kill the whole city 
                             </li>
                             <li>
-                                <CgMathPlus /> E muuuuuito mais!
+                                <CgMathPlus /> These were the pros there are no cons
                             </li>
                         </ul>
                     </div>
@@ -174,21 +178,21 @@ export default function Company() {
             </article>
             <article className={styles.cards} id="cards">
                 <h3>
-                    O <span>iManager</span> tem tudo que você precisa para gerir sua empresa.
+                    The<span>Types</span> of hall of frame faces of my bachha
                 </h3>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <div className={styles.cardList}>
                         <div className={styles.card}>
                         <img src={Muskan} alt="Segurança" />
-                            <p className='text-white fs-2' >Segurança</p>
+                            <p className='text-white fs-2' >The dumb face</p>
                         </div>
                         <div className={styles.card}>
                         <img src={Muskan2} alt="Segurança" />
-                            <p className='text-white fs-2' >Segurança</p>
+                            <p className='text-white fs-2' >The happy face</p>
                         </div>
                         <div className={styles.card}>
                         <img src={Muskan3} alt="Segurança" />
-                            <p className='text-white fs-2' >Segurança</p>
+                            <p className='text-white fs-2' >The Ki hui face</p>
                         </div>
                     </div>
                 </ScrollAnimation>
@@ -218,11 +222,11 @@ export default function Company() {
                 </ul>
             </article> */}
             <article className={styles.evolution} ref={evolutionSectionRef} id="evolution">
-                <h3>Números da nossa evolução</h3>
+                <h3>Together Since</h3>
                 <div className={styles.evolutionCardsList}>
                     <div>
                         <h4>
-                            + de{' '}
+                            +
                             <AnimatedNumber
                                 value={evolutionEnterpriseValue}
                                 style={{
@@ -235,13 +239,13 @@ export default function Company() {
                                 duration={1200}
                                 formatValue={v => v.toFixed(0)}
                             />{' '}
-                            Milhões
+                            Months
                         </h4>
-                        <p>de empresas simplificando a gestão, um número que só cresce a cada dia.</p>
+                        <p>It feels like I have been with you forevere</p>
                     </div>
                     <div>
                         <h4>
-                            + de <br />{' '}
+                            + 
                             <AnimatedNumber
                                 value={evolutionCollaboratorsValue}
                                 style={{
@@ -254,9 +258,9 @@ export default function Company() {
                                 duration={900}
                                 formatValue={v => v.toFixed(0)}
                             />{' '}
-                            mil
+                            DAYS
                         </h4>
-                        <p>colaboradores fazem parte da iManager.</p>
+                        <p>But it has been only this much of time.</p>
                     </div>
                     <div>
                         <h4>
@@ -296,9 +300,9 @@ export default function Company() {
                                 duration={1800}
                                 formatValue={v => v.toFixed(0)}
                             />
-                            %
+                            Hr
                         </h4>
-                        <p>de presença nos municípios brasileiros.</p>
+                        <p>If we dont count that 1 and 1/2 years ....</p>
                     </div>
                 </div>
             </article>
@@ -413,8 +417,8 @@ export default function Company() {
             </article>
             <article className={styles.sustainable} id="sustainable">
                 <ScrollAnimation animateIn="animate__fadeInDown" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
-                    <h3>Ser sustentável é agilizar e incluir.</h3>
-                    <p>Geramos valor não só para nossos clientes, mas também para colaboradores, investidores e para a sociedade como um todo. Sempre alinhados com nossos pilares de gestão, Ambiental, Social e Governança.</p>
+                    <h3>Motu apan dhek kha se kha aya gaye hai .</h3>
+                    <p>phele jab apan ne start kia tha tho apan ko kitna seekhna tha apan dhek sath mai grow kie hai motu tu 2 company maikam kar raha hai mai 2 mai jho tu karta hai vo mai copy karta hu jho mai karta hu vo tu copy karta hai mera chota sa bandar </p>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <img src={CompanyImage6} alt="wind energy" />
@@ -426,12 +430,13 @@ export default function Company() {
                         <div className={styles.carouselItem}>
                             <img src={iBestImage} alt="iBest award image" />
                             <div>
-                                <h4>Prêmio iBest</h4>
-                                <p>Recebemos os Prêmios de Melhor Gestora Digital do Brasil pelo júri popular, Melhor Web App e Top 3 Gestores Digitais pelo júri da Academia iBest.</p>
+                                <h4>Mera bandar</h4>
+                                <p>This is where everything started i started liking you mere motu .</p>
                             </div>
                         </div>
                         <div className={styles.carouselItem}>
                             <img src={reclameAquiImage} alt="reclame aqui award image" />
+                            
                             <div>
                                 <h4>Reclame Aqui</h4>
                                 <p>Fomos eleitos o 2º melhor atendimento do Brasil por voto popular pelo segundo ano consecutivo - categoria de Gestores Digitais.</p>
