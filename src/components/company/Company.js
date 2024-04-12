@@ -306,7 +306,7 @@ export default function Company() {
                     </div>
                 </div>
             </article>
-            <article className={styles.trajectory} id="trajectory">
+            {/* <article className={styles.trajectory} id="trajectory">
                 <div>
                     <h3>Nossa Trajetória</h3>
                     <p>Numa jornada com grandes transformações, cada momento é importante para continuarmos crescendo e inovando.</p>
@@ -414,7 +414,7 @@ export default function Company() {
                         </div>
                     </Carousel>
                 )}
-            </article>
+            </article> */}
             <article className={styles.sustainable} id="sustainable">
                 <ScrollAnimation animateIn="animate__fadeInDown" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
                     <h3>Motu apan dhek kha se kha aya gaye hai .</h3>
@@ -438,36 +438,36 @@ export default function Company() {
                             <img src={reclameAquiImage} alt="reclame aqui award image" />
                             
                             <div>
-                                <h4>Reclame Aqui</h4>
-                                <p>Fomos eleitos o 2º melhor atendimento do Brasil por voto popular pelo segundo ano consecutivo - categoria de Gestores Digitais.</p>
+                                <h4>Amer </h4>
+                                <p>Yhe ghaga muje bhot pasand hai mera man tho yhe karta hai thuje roj yaha le ke jyu there sath moti .</p>
                             </div>
                         </div>
                         <div className={styles.carouselItem}>
                             <img src={joaoVitorMeninImage} alt="João Vitor Menin image" />
                             <div>
-                                <h4>Forbes Brasil</h4>
-                                <p>João Vitor Menin foi eleito um dos 10 líderes que melhor mantiveram ou elevaram a relevância de suas marcas e os indicadores de seus negócios em meio a crise.</p>
+                                <h4>2 cute se baby </h4>
+                                <p>I mai 2 cute se baby hai ak mere chota sa bachha hai bhot shatan hai mera chota sa bachha .</p>
                             </div>
                         </div>
                         <div className={styles.carouselItem}>
                             <img src={humanizadasImage} alt="Humanizadas award image" />
                             <div>
-                                <h4>Melhores para o Brasil</h4>
-                                <p>Fomos reconhecidos pela Humanizadas como uma organização aberta aos feedbacks e agente de transformação social e ambiental que soluciona problemas reais.</p>
+                                <h4>Moti apani trip </h4>
+                                <p>These are some of the best parts of my life till now cant stop remenmbring you when i am right this to you but you are my everything you are my sona bachha you are my life .</p>
                             </div>
                         </div>
                         <div className={styles.carouselItem}>
                             <img src={seloOuroGHGImage} alt="Selo Ouro GHG Protocol award image" />
                             <div>
-                                <h4>Selo Ouro GHG Protocol</h4>
-                                <p>Pela segunda vez consecutiva o iManager teve seu Inventário de emissões de gases de Efeito Estufa (GEE) reconhecido com o Selo Ouro do GHG Protocol, reforçando nosso compromisso com o desenvolvimento sustentável.</p>
+                                <h4>Mere cute face </h4>
+                                <p>Yhe face muje sab se jyada cute lagata hai golu molu sa face .</p>
                             </div>
                         </div>
                     </Carousel>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true} duration={1.8} delay={100} animatePreScroll={false}>
-                    <h3>Prêmios e reconhecimentos</h3>
-                    <p>Somos reconhecidos e premiados em diversas áreas, por nossas ações inovadoras e focadas em impactar positivamente a vida das pessoas, a gestão das empresas, e o mundo.</p>
+                    <h3>Her Nature  </h3>
+                    <p>She is like a bright day of summer on the beach which is not that hot and cold but it suits you like the summer in shin Chan that I totally love the things that make it better is voice, her care, Her always being there part and make me feel loved by her ... she is like a day that I can spend my whole life innn. I never thought I would find this thing I a person the calmness that I get after talking can only be possible if I am in that summer day and I am sitting outside my veranda and just observing the things around me that make me feel alive.</p>
                 </ScrollAnimation>
             </article>
             {/* <article className={styles.partnership} id="partnership">
@@ -507,7 +507,7 @@ export default function Company() {
                     </ScrollAnimation>
                 </div>
             </article> */}
-            <article className={styles.news} id="news">
+            {/* <article className={styles.news} id="news">
                 <h3>Fique por dentro das nossas novidades</h3>
                 <p>
                     <a href="#">Acompanhe nosso blog</a> e nossas redes sociais para ficar por dentro do que acontece aqui no Inter.
@@ -566,7 +566,7 @@ export default function Company() {
                         </a>
                     </ScrollAnimation>
                 </div>
-            </article>
+            </article> */}
         </section>
     );
 }
