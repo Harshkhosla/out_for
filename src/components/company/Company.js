@@ -164,7 +164,7 @@ export default function Company() {
                                 <BsCreditCard2FrontFill /> Very less strength 
                             </li>
                             <li>
-                                <MdAirplaneTicket /> Mujhe bhot sara khama khilati hai moti 
+                                <MdAirplaneTicket /> Mujhe bhot sara khana khilati hai moti 
                             </li>
                             <li>
                                 <MdNetworkCell /> The poti ability to kill the whole city 
